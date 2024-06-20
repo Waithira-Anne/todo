@@ -86,7 +86,7 @@ class App extends Component {
       const updatedTodo = JSON.stringify(updatedTodos);
       localStorage.setItem("todos", updatedTodo); 
       this.setState({ 
-      list: JSON.parse(localStorage.getItem("todos")), 
+        list: JSON.parse(localStorage.getItem("todos")), 
     });   
   }
 
@@ -156,9 +156,8 @@ class App extends Component {
                   >
 
                     <div className="task-left">
-                    <input type="checkbox" className="round-checkbox" onClick={() => this.completedItem(index)}/>
+                    <Button className="round-checkbox" style={item.completed ? { background: "green" } : {}} onClick={() => this.completedItem(index)}></Button>
                       <p className="task" style={item.completed ? { textDecoration: "line-through" } : {}}>{item.value}</p>
-                      
                     </div>
                     <span className="task-right">
                        

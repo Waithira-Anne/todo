@@ -241,8 +241,15 @@ input:last-of-type {
   border: 1px solid #ccc; /* Checkbox border */
 }
 
+.round-checkbox:hover{
+
+  background: green;
+  border: 1px solid #ccc;
+}
+
 .round-checkbox:checked {
-  background-color: #333; /* Checkbox color when checked */
+  background-color: green; /* Checkbox color when checked */
+  border: 1px solid #ccc;
 }
 
 .edit-btn{
